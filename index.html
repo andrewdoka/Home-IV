@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Code Quiz</title>
+
+    
+
+ <!-- Bootstrap File -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+ <!-- JQuery -->
+ <script src="https://code.jquery.com/jquery.js"></script>
+
+ <!-- Local CSS -->
+ <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+
+<!-- Start -->
+    <div class="container center">
+
+    <button type="button" class="btn btn-primary btn-lg btn-block mx-auto d-all" style="width: 200px; " id="start">Start Quiz</button>
+   
+   
+    <!-- Question Card-->
+    <div class="card text-center d-none" id="questionsCard">
+        <div class="card-header text-center" id="timer">
+          00:00
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center" id="questionHeader">Question Number Displays Here !</h5>
+          <p class="card-text font-weight-bold"id="question">Question Displays Here !</p>
+         
+         
+         
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="A"></input>
+            <label class="custom-control-label" for="customRadio1" id="choiceA">Choice A Displays Here !</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="B">
+            <label class="custom-control-label" for="customRadio2" id="choiceB">Choice B Displays Here !</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="C">
+            <label class="custom-control-label" for="customRadio3" id="choiceC">Choice C Displays Here !</label>
+          </div>
+        </div>
+
+
+      
+    <!--Submit Button-->
+          <a class="btn btn-primary center" id="submit">Submit</a>
+
+        <div class="card-footer text-muted">
+          Question x/x Displays Here !.
+        </div>
+      </div>
+
+
+    
+    </div> 
+    
+    
+       <!-- Final Card-->
+       <div class="card text-center d-none" id="finalCard">
+        <div class="card-footer">
+            <h5 class="card-title text-center">Exam is Over !</h5>
+            <img class= "center" src="https://i.pinimg.com/originals/7f/29/60/7f296084de561f6444a115475961af23.png" alt="alternatetext">
+        
+        </div>
+      </div>
+           
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
